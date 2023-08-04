@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img/pexels-bence-szemerey-15203358.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: blur(20px); */
+}
+
+
+
+.one {
+    height: 90%;
+    width: 50%;
+    background-image: url(/img/istockphoto-467938826-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 0 40px #000;
+    /* display: flex; */
+    /* top: 20%; */
+
+
+}
+
+.one h1,
+p {
+    color: rgb(255, 255, 255);
+    /* padding: 50px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: self-start;
+}
+
+.one h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-left: 15%;
+}
+
+.one p {
+    margin-left: 15%;
+    font-size: 20px;
+}
+
+.one button {
+    margin-left: 15%;
+    width: 17%;
+    height: 5%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.one button:hover {
+    zoom: 90%;
+    background-color: aquamarine;
+
+}
+
+.two {
+    height: 90%;
+    width: 40%;
+    background-color: rgb(5, 103, 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.two h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.two input {
+
+    width: 50%;
+    height: 5%;
+    cursor: pointer;
+
+}
+
+.two button {
+    width: 52%;
+    height: 6%;
+    cursor: pointer;
+}
+
+.two #a {
+    border-color: aliceblue;
+    border-radius: 10px;
+}
+
+@media(max-width:1024px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .one {
+        width: 80%;
+    }
+
+    .two {
+        width: 80%;
+    }
+}
+
+@media(max-width:524px) {
+
+    .two,
+    .one {
+        width: 80%;
+        height: 90%;
+    }
+
+    .one {
+        background-image: url(/img/istockphoto-467938826-612x612.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .one button {
+        height: 5%;
+        width: 35%;
+
+    }
+}
