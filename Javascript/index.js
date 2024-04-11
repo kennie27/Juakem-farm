@@ -19,7 +19,7 @@ function autoType() {
       clearInterval(intervalid);
       setTimeout(autoType, 2000);
     }
-  }, 120);
+  }, 200);
 }
 
 autoType();

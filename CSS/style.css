@@ -14,8 +14,20 @@
     display: flex;
     flex-direction: column;
     background-image: url(/img/home.jpg);
+    background-color: black;
+    position: relative;
+    /* z-index: 0; */
 
 }
+
+.opc {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* z-index: 1; */
+    background-color: #00000060;
+}
+
 
 .list {
     height: 7%;
@@ -93,9 +105,17 @@ ul li a:hover:before {
     flex-direction: column;
 }
 
-.home h1,
-p {
+.home h1 {
+    font-size: 40px;
+    position: relative;
+    z-index: 0;
+    color: #ffffff;
+}
+
+.home p {
     font-size: 20px;
+    position: relative;
+    z-index: 0;
     color: #ffffff;
 }
 
@@ -116,6 +136,7 @@ p {
     margin-left: 2%;
     background-repeat: no-repeat;
     background-size: 100%;
+    /* position: relative; */
 }
 
 .abouttwo {
@@ -153,17 +174,37 @@ h2 {
 }
 
 .services {
-    height: 100vh;
+    height: 120vh;
     width: 100%;
-    height: max-content;
+    background-image: url(/img/background_7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+animation: ken 25s alternate infinite;
 
+}
+@keyframes ken {
+    0%{
+        background-image: url(/img/background_7.jpg) ;
+    }
+    25%{
+        background-image: url(/img/background_12.jpg);
+    }
+    50%{
+        background-image: url(/img/background_9.jpg);
+    }
+    75%{
+        background-image: url(/img/banner.jpg);
+    }
+    100%{
+        background-image: url(/img/carrots.jpg);
+    }
 }
 
 
 
 
 .vegetables {
-    height: 35%;
+    height: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -172,21 +213,31 @@ h2 {
 }
 
 .veg {
-    background-color: beige;
-    border: 5px solid green;
-    width: 30%;
-    height: 100%;
+    background-image: url(/img/vegi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 80%;
     margin-right: 3%;
+    border-radius: 7px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+
 .veg h3 {
-    margin-left: 30%;
     font-size: 15px;
+    position: relative;
+    color: #fff;
 }
 
 .veg p {
     font-size: 15px;
-    color: #000;
+    color: #fff;
+    text-align: center;
+    position: relative;
 }
 
 
@@ -194,93 +245,95 @@ h2 {
 .veg img {
     height: 25%;
     width: 25%;
-    margin-left: 28%;
-
+    margin-left: 35%;
+    position: relative;
+    z-index: 2;
 }
 
 .fruits {
-    height: 100%;
-    width: 30%;
-    background-color: rgb(115, 188, 188);
-    border: 5px solid green;
+    height: 80%;
+    width: 40%;
+    background: url(/img/coffee.jpg);
+    background-size: cover;
+    border-radius: 7px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .fruits h3 {
-    margin-left: 30%;
-    font-size: 15px;
+    font-size: 22px;
+    color: #fff;
 }
 
 .fruits p {
     font-size: 15px;
-    color: #000;
+    color: #fff;
+    text-align: center;
 
-}
-
-
-
-
-
-.fruits img {
-    margin-left: 28%;
-    height: 25%;
-    width: 35%;
 }
 
 .serve {
-    height: 35%;
+    height: 40%;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 .cattle {
-    height: 100%;
-    width: 32%;
-    background-color: aqua;
-    border: 5px solid green;
+    height: 80%;
+    width: 40%;
+    background-image: url(/img/coows.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px 12px;
+    margin-right: 3%;
 }
 
 .cattle h3 {
     display: flex;
     justify-content: center;
-    font-size: 15px;
-}
-
-.cattle img {
-    height: 20%;
-    width: 15%;
-    margin-left: 38%;
+    font-size: 22px;
+    color: #fff;
 }
 
 .cattle p {
     margin-bottom: 40px;
     font-size: 15px;
-    color: #000;
+    color: #fff;
+    text-align: center;
 
 }
 
 .seed {
-    height: 100%;
-    width: 32%;
-    background-color: rgb(211, 190, 4);
-    border: 5px solid green;
+    height: 80%;
+    width: 40%;
+    background-image: url(/img/seedss.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px 12px;
+
 }
 
-.seed img {
-    margin-left: 28%;
-    height: 25%;
-    width: 33%;
-}
+
 
 .seed h3 {
-    margin-left: 30%;
-    font-size: 15px;
+    font-size: 22px;
+    color: #fff;
 }
 
 .seed p {
     font-size: 15px;
-    color: #000;
+    color: #fff;
+    text-align: center;
 
 }
 
@@ -728,7 +781,7 @@ h2 {
 .livestock {
     height: 100%;
     width: 35%;
-    
+
 }
 
 .livestock p {
@@ -784,11 +837,13 @@ h2 {
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
-        
+
 }
+
 .poutry h1 {
     margin-left: 3px;
 }
+
 .poutry2 p {
     margin-left: 5px;
 }
@@ -813,7 +868,7 @@ h2 {
     scroll-snap-align: start;
     background-size: cover;
     border-radius: 10px;
-   
+
 }
 
 .poutry3 {
@@ -891,6 +946,10 @@ h2 {
 
     }
 
+    .services {
+        height: max-content;
+    }
+
     .vegetables,
     .serve {
         flex-wrap: wrap;
@@ -905,6 +964,10 @@ h2 {
         margin-left: 1%;
         margin-top: 10px;
 
+    }
+
+    .products {
+        height: max-content;
     }
 
     .info {
@@ -957,31 +1020,35 @@ h2 {
         width: 70%;
         height: 60%;
     }
+
     .navbar2 {
         background-image: url(/img/cow8.jpg);
         background-size: cover;
-       
+
     }
-        .poutry1 {
-            display: flex;
-            flex-direction: column;
-            height: max-content;
-        }
-    
-        .poutry2 {
-            width: 100%;
-        }
-        .poutry3 {
-            width: 80%;
-        }
-        .opc input {
-            width: 80%;
-        }
+
+    .poutry1 {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .poutry2 {
+        width: 100%;
+    }
+
+    .poutry3 {
+        width: 80%;
+    }
+
+    .opc input {
+        width: 80%;
+    }
 }
 
 
 @media (max-width: 540px) {
-    
+
     .veg,
     .fruits,
     .cattle,
@@ -990,24 +1057,26 @@ h2 {
 
 
     }
-    
+
     .live1 {
         display: flex;
         flex-direction: column;
         height: max-content;
+
         .navbar2 {
             background-image: url(/img/cow8.jpg);
             background-size: cover;
-           
+
         }
     }
-        .poutry1 {
-            display: flex;
-            flex-direction: column;
-            height: max-content;
-        }
-    
-        .livestock {
-            width: 100%;
-        }
+
+    .poutry1 {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .livestock {
+        width: 100%;
+    }
 }
