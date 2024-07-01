@@ -5,15 +5,13 @@
 
 
 
-
-
-
 .navbar1 {
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     background-image: url(/img/home.jpg);
+    background-size: cover;
     background-color: black;
     position: relative;
     /* z-index: 0; */
@@ -525,7 +523,7 @@ animation: ken 25s alternate infinite;
 }
 
 .info3 button:hover {
-    background-color: #0cb700;
+    background-color: blue;
 }
 
 .info4 {
